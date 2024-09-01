@@ -20,7 +20,7 @@ public class SkyController : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(time);
+            yield return new WaitForSeconds(time * ManagerModel.SkyCutSpeedTimes);
             RenderSettings.skybox = skyBoxs[i];
             if(i < skyBoxs.Count - 1)
             {
@@ -30,8 +30,6 @@ public class SkyController : MonoBehaviour
             {
                 i = 0;
             }
-            
-
         }
     }
 }
