@@ -180,7 +180,7 @@ GameObject:
   - component: {fileID: 2725263687523919668}
   m_Layer: 0
   m_Name: Free Racing Car Purple Variant
-  m_TagString: Untagged
+  m_TagString: Car
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -236,6 +236,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3158579f2ad646a49805adfd57033280, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveSpeed: 10
 --- !u!1 &3189624110636945710
 GameObject:
   m_ObjectHideFlags: 0

@@ -23,4 +23,7 @@ public static class ManagerModel
 
 
     public static Action RestartGameEvent { get; set; }
+    public static Action EndGameEvent { get; set; }
+    public static Action WallRestEvent { get; set; }
+    public static Action DestoryAllCars { get; set; }
 }

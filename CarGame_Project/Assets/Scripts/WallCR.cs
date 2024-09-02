@@ -23,7 +23,7 @@ public class WallCR : MonoBehaviour
             if (Speed < 60f)
             {
                 ManagerModel.WallMoveSpeed += 1.2f;
-                Debug.Log("ÄÑ¶È£º"+Speed);
+                ManagerModel.WallRestEvent?.Invoke();
             }
         }
     }

@@ -13,7 +13,7 @@ public class MainCarController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.A))
         {
-           MoveLeft();
+            MoveLeft();
         }
         if (Input.GetKeyDown(KeyCode.D))
         {
@@ -36,5 +36,12 @@ public class MainCarController : MonoBehaviour
     {
         if (transform.position.x < 7)
             transform.position += new Vector3(7, 0, 0);
+    }
+
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Car"))
+            ManagerModel.EndGameEvent?.Invoke();
     }
 }
